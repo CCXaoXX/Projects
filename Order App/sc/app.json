@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/aaafirst/aaafirst",
+    "pages/waimailist/waimailist",
+    "pages/waimaidetail/waimaidetail",
+    "pages/waimaisuborder/waimaisuborder",
+    "pages/mywaimai/mywaimai",
+    "pages/mywaimaidetail/mywaimaidetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b39ddb",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,15 @@
+t = 0: 0.01: 20;
+w1 = 2; 
+w2 = 5;
+H1 = (-1i * w1 + 2) ./ ((1i * w1)^2 + 2 * 1i * w1 + 3);
+H2 = (-1i * w2 + 2) ./ ((1i * w2)^2 + 2 * 1i * w2 + 3);
+f = 3 + cos(2 * t) + cos(5 * t);
+y=3 + abs(H1) * cos(w1 * t + angle(H1)) + abs(H2) * cos(w2 * t + angle(H2)); 
+subplot(211);
+plot(t,f);
+ylabel('f(t)'),xlabel('Time(s)');
+title('激励信号的波形');
+subplot(212);
+plot(t,y);
+ylabel('y(t)'),xlabel('Time(s)');
+title('稳态响应的波形');

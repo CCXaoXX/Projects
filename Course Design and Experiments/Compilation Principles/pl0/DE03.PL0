@@ -1,0 +1,21 @@
+PROGRAM DE03;
+VAR A,B,C,D;
+BEGIN
+  A:=10;
+  A*=2;
+  WRITE(A);
+  B:=4;
+  B/=2;
+  WRITE(B);
+  C:=50;
+  ++C;
+  WRITE(C);
+  --C;
+  WRITE(C);
+  D:=100;
+  WRITE(D++);
+  WRITE(D--);
+   // 单行注释
+  /* 多行
+ 注释 */	
+END.

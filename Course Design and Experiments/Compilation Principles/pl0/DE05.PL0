@@ -1,0 +1,11 @@
+PROGRAM DE05;
+VAR A,B,C;
+BEGIN
+  B:=1; 
+  C:=2; 
+   READ(A); 
+   IF A!=1 THEN 
+     WRITE(C) 
+   ELSE 
+     WRITE(B); 
+END. 

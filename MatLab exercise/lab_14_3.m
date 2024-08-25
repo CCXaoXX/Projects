@@ -1,0 +1,13 @@
+B = [1 0 0];
+A = [1 -0.75 0.128];
+[H, w] = freqz(B, A, 400, 'whole');
+Hm = abs(H);
+Hp = angle(H);
+subplot(211);
+plot(w, Hm), grid on;
+xlabel('\omega(rad/s)'),ylabel('幅度');
+title('离散系统幅频特性曲线');
+subplot(212);
+plot(w, Hp),grid on;
+xlabel('\omega(rad/s)'),ylabel('相位');
+title('离散系统相频特性曲线');

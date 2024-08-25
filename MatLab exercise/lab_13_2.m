@@ -1,0 +1,16 @@
+nx = -2:7;
+nh = -4:14;
+x = uDT(nx) - uDT(nx - 5);
+h = (7 /8) .* (uDT(nh) - uDT(nh - 10));
+y = conv(x, h);
+ny1 = nx(1) + nh(1);
+ny = ny1 + (0:(length(nx)+length(nh)-2));
+subplot(311);
+stem(nx,x,'fill');
+title('x(n)');
+subplot(312);
+stem(nh,h,'fill');
+title('h(n)');
+subplot(313);
+stem(ny,y,'fill');
+title('y(n)=x(n)*h(n)');

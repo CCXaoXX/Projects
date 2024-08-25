@@ -1,0 +1,12 @@
+w = -6 * pi:0.01:6 * pi;
+b=[1 0];
+a=[0.2 0.2 1 0]; 
+H = freqs(b,a,w); 
+subplot(211);
+plot(w,abs(H));
+xlabel('\omega(rad/s)'),ylabel('|H(\omega)|');
+title('电路系统的幅频特性');
+subplot(212);
+plot(w,angle(H));
+xlabel('\omega(rad/s)'),ylabel('\phi(\omega)');
+title('电路系统的相频特性');
